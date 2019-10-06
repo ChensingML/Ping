@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/a2LinearLayout1">
+
+	<EditText
+		android:id="@+id/a2ipe"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="主机或IP"
+		android:ems="10"/>
+	<EditText
+		android:id="@+id/a2sizee"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="56"
+		android:hint="数据包大小 (0-65507)"
+		android:ems="10"
+		android:inputType="number"/>
+
+	<LinearLayout
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:id="@+id/a2timese"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:text="4"
+			android:hint="次数"
+			android:ems="10"
+			android:inputType="number"/>
+
+		<CheckBox
+			android:id="@+id/a2susc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="一直发送直到关闭"/>
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/a2start"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="开始"
+		style="?android:attr/buttonBarButtonStyle"/>
+
+</LinearLayout>
+
